@@ -67,8 +67,9 @@ smry_lgR, cm_lgR = metrics_Classifier(Y_valid, Y_Pred_lgR, Clsfr_lgR.classes_)
 smry_SVM, cm_SVM = metrics_Classifier(Y_valid, Y_Pred_lgR, Clsfr_SVM.classes_)
 smry_NN , cm_NN  = metrics_Classifier(Y_valid, Y_Pred_NN, list(set([n[0] for n in Y.tolist()])))
 
-lr     = 0.01
-epochs = 2000
-
+print("confussion Matrix")
+print(cm_lgR, cm_SVM, cm_NN)
+print("Summary of validation set")
+print(smry_lgR, smry_SVM, smry_NN)
 
 
