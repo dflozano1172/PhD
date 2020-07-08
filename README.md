@@ -1,5 +1,5 @@
-Fake data uses the 
-
+# Description
+The classifiers defined in FakeDataClassifier.py, uses Fake data created for the following characteristics:
 
 | Field   | Type | Range   |
 |---|-------|---|
@@ -14,3 +14,8 @@ Fake data uses the
 |Diastolic_BP|||
 |BUN|||
 |Heart_Rate|||
+
+# Instructions
+
+
+
