@@ -15,12 +15,18 @@ cols     = raw_Data.columns.tolist()
 raw_Data['AGE_PERCENTIL'] = pd.factorize(raw_Data['AGE_PERCENTIL'])[0]
 
 
-data     = raw_Data[['PATIENT_VISIT_IDENTIFIER',	'AGE_ABOVE65', 'AGE_PERCENTIL', 'GENDER', 'BLOODPRESSURE_DIASTOLIC_MEAN',
+data     = raw_Data[['PATIENT_VISIT_IDENTIFIER', 'AGE_PERCENTIL', 'GENDER', 'BLOODPRESSURE_DIASTOLIC_MEAN',
                      'BLOODPRESSURE_SISTOLIC_MEAN',	'HEART_RATE_MEAN', 'RESPIRATORY_RATE_MEAN',	'TEMPERATURE_MEAN',	
                      'OXYGEN_SATURATION_MEAN', 'WINDOW', 'ICU']]
 
 
 
+patients = data['PATIENT_VISIT_IDENTIFIER'].unique().tolist()
+
+
+data[data['PATIENT_VISIT_IDENTIFIER'] == 1]
+A = data[data['ICU'] == 1]
+pos_patients = A['PATIENT_VISIT_IDENTIFIER'].unique().tolist()
 
 ###### Simple Imputer 
 from sklearn.impute import SimpleImputer
