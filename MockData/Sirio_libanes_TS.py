@@ -1,7 +1,7 @@
 %reset -f
 import numpy as np
 import pandas as pd
-import time
+import pickle
 import seaborn as sns
 from matplotlib import pyplot as plt
 from sklearn import linear_model
@@ -45,7 +45,7 @@ for patient in patients:
             pat_miss_neg.append(pat_data.drop(columns=['WINDOW']).values.tolist())
         else:
             pat_miss_pos.append(pat_data.drop(columns=['WINDOW']).values.tolist())
-            
+
 pat_full_pos = np.array(pat_full_pos)
 pat_miss_pos = np.array(pat_miss_pos)
 pat_full_neg = np.array(pat_full_neg)
@@ -58,13 +58,33 @@ imp_pos.fit(pat_full_pos.mean(axis=0))
 
 for i, patient in enumerate(np.rollaxis(pat_miss_pos,0)): pat_full_pos = np.insert(pat_full_pos, len(pat_full_pos),imp_pos.transform(patient), axis = 0)
 for i, patient in enumerate(np.rollaxis(pat_miss_neg,0)): pat_full_neg = np.insert(pat_full_neg, len(pat_full_neg),imp_neg.transform(patient), axis = 0)
-data_imputed = np.concatenate((pat_full_pos ,pat_full_neg),axis=0)
 
-z_save_list.append('data_imputed')
-z_save_list.append('save_list')
+
+columns = pat_data.columns.tolist()
+columns.remove('WINDOW')
+data_imputed = np.concatenate((pat_full_pos ,pat_full_neg),axis=0)
+data_imputed = pd.DataFrame(data_imputed.reshape(data_imputed.shape[0] * data_imputed.shape[1], data_imputed.shape[2]), columns = columns)
+pickle_out = open("data_imputed.pickle","wb")
+pickle.dump(data_imputed, pickle_out)
+pickle_out.close()
+
+print("Imputation process took: ", time.time() - t)
+##########################################################################################################
+#END OF IMPUTATION
+##########################################################################################################
+z_save_list.append('z_save_list')
 for z_name in dir():
     if z_name not in z_save_list:
         del globals()[z_name]
+##########################################################################################################
+
+
+
+data_imputed = pickle.load(open("data_imputed.pickle","rb"))
+
+
+
+
 
 
 
