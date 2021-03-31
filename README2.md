@@ -10,7 +10,7 @@ pip install tika
 pip install pdfminer
 ```
 # Objective
-The Script _Sentences_Scrapper_V2.ipnby_ extracts the sentences/paragraphs from a set of URL that contain keywords specific to each URL. 
+The Script _Sentences_Scrapper_V2.ipynb_ extracts the sentences/paragraphs from a set of URL that contain keywords specific to each URL. 
 
 # Input
 In the same folder as the script, must be a CSV file named _OutputData_clean2.csv_ . This file should cointain at least two columns one called *Url* and other *Keyword*. The Url column must have the *URL* of websites that want to be extracted. The column *Keyword* contain the set of keywords to look at the URL in the same row. More than one key word can be specified and each "keyword" can have more than one word. Same keyword words are connected by an underline, and each keyword is separated by space. For example
