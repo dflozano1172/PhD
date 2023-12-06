@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -l walltime=10:00:00
+#PBS -l vmem=20gb
+#PBS -l nodes=1:ppn=1
+#PBS -N stats_2019_20
+#PBS -m bea
+#PBS -o stats_2019_20_output.txt
+#PBS -e stats_2019_20_error.txt
+
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/2_Statistics_2019_2020/TS_Statistical_analysis
+
+
+# NOTE:two parenthesis to make the maths work
+
+
+
+# Send the script
+
+echo python TS_Statistics.py
+python TS_Statistics.py
+
+
+
