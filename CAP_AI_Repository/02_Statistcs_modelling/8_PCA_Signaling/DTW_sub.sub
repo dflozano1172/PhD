@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -l walltime=30:00:00
+#PBS -l vmem=18gb
+#PBS -l nodes=1:ppn=1
+#PBS -N DTW_full
+#PBS -m bea
+#PBS -o dtw_output.txt
+#PBS -e dtw_error.txt
+
+
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/8_PCA_Signaling
+
+
+echo python DTW_matrix_sub.py 
+python DTW_matrix_sub.py
+
+
+
+
