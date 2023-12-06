@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l walltime=72:00:00
+#PBS -l vmem=18gb
+#PBS -l nodes=1:ppn=1
+#PBS -N LOS_o65
+#PBS -m bea
+#PBS -o output_LOS_o65.txt
+#PBS -e error_LOS_o65.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/12_LoS_Modelling/o_65
+
+
+python LOS_ts_GRU.py
+python LOS_ts_LSTM.py
+python LOS_sta_SVM.py
+python LOS_sta_XGB.py
+
+
+
+
