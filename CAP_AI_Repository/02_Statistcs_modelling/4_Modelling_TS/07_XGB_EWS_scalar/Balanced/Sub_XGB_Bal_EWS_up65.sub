@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -l walltime=48:00:00
+#PBS -l vmem=12gb
+#PBS -l nodes=1:ppn=1
+#PBS -N XGB_Bal_EWS_up65
+#PBS -m bea
+#PBS -o output_XGB_EWS_up65_bal.txt
+#PBS -e errors_XGB_EWS_up65_bal.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/07_XGB_EWS_scalar/Balanced
+
+echo XGB_Balanced_EWS_up65.py
+python XGB_Balanced_EWS_up65.py
+
+
+
+
