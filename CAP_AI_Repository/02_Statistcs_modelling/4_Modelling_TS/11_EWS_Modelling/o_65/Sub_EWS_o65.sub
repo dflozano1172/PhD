@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l walltime=72:00:00
+#PBS -l vmem=18gb
+#PBS -l nodes=1:ppn=1
+#PBS -N EWS_o65
+#PBS -m bea
+#PBS -o output_EWS_o65.txt
+#PBS -e error_EWS_o65.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/11_EWS_Modelling/o_65
+
+
+python EWS_ts_GRU.py
+python EWS_ts_LSTM.py
+python EWS_sta_SVM.py
+python EWS_sta_XGB.py
+
+
+
+
