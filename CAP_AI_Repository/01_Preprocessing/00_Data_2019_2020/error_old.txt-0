@@ -1,0 +1,1 @@
+/etc/profile.d/hpc-login.sh: line 37: export: `0': not a valid identifier
