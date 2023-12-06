@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 8
+['8']
+HCT
+Elapsed time loading data: 6.280735492706299
+
+-------------------------------
+HCT
+
+Maxmin Transform and data serialisation: 2.525611400604248
+starting  4  -----------------
+SOM plot time elapsed 92.7175760269165
+elapsed KM 2475.4776492118835
+elapsed KS 293.3784294128418
+starting  5  -----------------
+SOM plot time elapsed 90.130122423172
+elapsed KM 2648.011480808258
+elapsed KS 317.14724564552307
+starting  6  -----------------
+SOM plot time elapsed 87.08220791816711
+elapsed KM 7184.098186016083
+elapsed KS 505.83928775787354
+starting  7  -----------------
+SOM plot time elapsed 84.39597964286804
+elapsed KM 6089.00439119339
+elapsed KS 537.4727346897125
+elapsed TOTAL 20619.817923545837

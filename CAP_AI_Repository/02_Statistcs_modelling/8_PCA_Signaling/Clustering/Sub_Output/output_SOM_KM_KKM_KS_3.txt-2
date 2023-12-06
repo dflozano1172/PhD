@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 11
+['11']
+TLYMAB
+Elapsed time loading data: 6.371511697769165
+
+-------------------------------
+TLYMAB
+
+Maxmin Transform and data serialisation: 2.4867396354675293
+starting  4  -----------------
+SOM plot time elapsed 93.87540626525879
+elapsed KM 1831.8599977493286
+elapsed KS 209.32969975471497
+starting  5  -----------------
+SOM plot time elapsed 81.75889182090759
+elapsed KM 2927.1048216819763
+elapsed KS 272.68897461891174
+starting  6  -----------------
+SOM plot time elapsed 85.90234136581421
+elapsed KM 3340.9142627716064
+elapsed KS 358.30435276031494
+starting  7  -----------------
+SOM plot time elapsed 77.4291934967041
+elapsed KM 4822.073230981827
+elapsed KS 467.7462110519409
+elapsed TOTAL 14784.081909418106

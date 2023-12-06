@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 2
+['2']
+temperature
+Elapsed time loading data: 5.867521524429321
+
+-------------------------------
+temperature
+
+Maxmin Transform and data serialisation: 2.427025556564331
+starting  4  -----------------
+SOM plot time elapsed 128.62926125526428
+elapsed KM 7428.004939556122
+elapsed KS 289.6151776313782
+starting  5  -----------------
+SOM plot time elapsed 126.29391670227051
+elapsed KM 5935.679185390472
+elapsed KS 468.47930693626404
+starting  6  -----------------
+SOM plot time elapsed 124.46703219413757
+elapsed KM 13302.21945476532
+elapsed KS 630.7294330596924
+starting  7  -----------------
+SOM plot time elapsed 125.768963098526
+elapsed KM 11545.456692695618
+elapsed KS 884.6377437114716
+elapsed TOTAL 41200.8204703331

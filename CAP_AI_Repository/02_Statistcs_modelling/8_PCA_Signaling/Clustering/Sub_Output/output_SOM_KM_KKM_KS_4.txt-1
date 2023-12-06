@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 13
+['13']
+ALP
+Elapsed time loading data: 6.239630699157715
+
+-------------------------------
+ALP
+
+Maxmin Transform and data serialisation: 2.495530366897583
+starting  4  -----------------
+SOM plot time elapsed 70.61743450164795
+elapsed KM 1297.439873456955
+elapsed KS 152.8094620704651
+starting  5  -----------------
+SOM plot time elapsed 69.0778398513794
+elapsed KM 2925.3606877326965
+elapsed KS 225.3637843132019
+starting  6  -----------------
+SOM plot time elapsed 65.38550925254822
+elapsed KM 3991.507737636566
+elapsed KS 315.4339187145233
+starting  7  -----------------
+SOM plot time elapsed 67.77365350723267
+elapsed KM 4706.647356033325
+elapsed KS 429.11942195892334
+elapsed TOTAL 14532.402508974075

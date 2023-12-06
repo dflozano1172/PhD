@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 1
+['1']
+heart_rate
+Elapsed time loading data: 6.572547674179077
+
+-------------------------------
+heart_rate
+
+Maxmin Transform and data serialisation: 2.4322290420532227
+starting  4  -----------------
+SOM plot time elapsed 129.9625527858734
+elapsed KM 7005.805866956711
+elapsed KS 247.7244837284088
+starting  5  -----------------
+SOM plot time elapsed 124.85528922080994
+elapsed KM 5513.597139120102
+elapsed KS 448.8072295188904
+starting  6  -----------------
+SOM plot time elapsed 124.46634030342102
+elapsed KM 9577.683827400208
+elapsed KS 1285.4529542922974
+starting  7  -----------------
+SOM plot time elapsed 257.4320442676544
+elapsed KM 16534.12229514122
+elapsed KS 877.5315356254578
+elapsed TOTAL 42404.45971488953

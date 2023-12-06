@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 14
+['14']
+BILI
+Elapsed time loading data: 6.23690390586853
+
+-------------------------------
+BILI
+
+Maxmin Transform and data serialisation: 2.4721827507019043
+starting  4  -----------------
+SOM plot time elapsed 58.537357330322266
+elapsed KM 1162.126047372818
+elapsed KS 149.55628442764282
+starting  5  -----------------
+SOM plot time elapsed 52.312928676605225
+elapsed KM 2159.1710798740387
+elapsed KS 224.9214174747467
+starting  6  -----------------
+SOM plot time elapsed 53.23339366912842
+elapsed KM 2719.1953089237213
+elapsed KS 314.6031029224396
+starting  7  -----------------
+SOM plot time elapsed 55.11280560493469
+elapsed KM 4024.2852437496185
+elapsed KS 421.0126552581787
+elapsed TOTAL 11606.065178632736

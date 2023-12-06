@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 7
+['7']
+GFR
+Elapsed time loading data: 6.60321307182312
+
+-------------------------------
+GFR
+
+Maxmin Transform and data serialisation: 2.4894258975982666
+starting  4  -----------------
+SOM plot time elapsed 80.90468049049377
+elapsed KM 1181.2211191654205
+elapsed KS 149.97431111335754
+starting  5  -----------------
+SOM plot time elapsed 63.86634922027588
+elapsed KM 1841.8354618549347
+elapsed KS 225.61515712738037
+starting  6  -----------------
+SOM plot time elapsed 62.01593375205994
+elapsed KM 2219.5077323913574
+elapsed KS 321.62887263298035
+starting  7  -----------------
+SOM plot time elapsed 59.505919456481934
+elapsed KM 6135.757713794708
+elapsed KS 419.29861879348755
+elapsed TOTAL 12973.231729507446

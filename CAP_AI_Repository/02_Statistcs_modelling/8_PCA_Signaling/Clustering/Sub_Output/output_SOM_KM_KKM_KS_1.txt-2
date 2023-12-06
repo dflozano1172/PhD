@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 5
+['5']
+UREA
+Elapsed time loading data: 6.267364025115967
+
+-------------------------------
+UREA
+
+Maxmin Transform and data serialisation: 2.597064256668091
+starting  4  -----------------
+SOM plot time elapsed 97.38498663902283
+elapsed KM 1554.396960735321
+elapsed KS 216.39203357696533
+starting  5  -----------------
+SOM plot time elapsed 86.48064708709717
+elapsed KM 2633.9718968868256
+elapsed KS 322.42076230049133
+starting  6  -----------------
+SOM plot time elapsed 89.52107572555542
+elapsed KM 3892.5820190906525
+elapsed KS 429.87741017341614
+starting  7  -----------------
+SOM plot time elapsed 84.07918381690979
+elapsed KM 7077.1577253341675
+elapsed KS 603.4475553035736
+elapsed TOTAL 17305.50185275078

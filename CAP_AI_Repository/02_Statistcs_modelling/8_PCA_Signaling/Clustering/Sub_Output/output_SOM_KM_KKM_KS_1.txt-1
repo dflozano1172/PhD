@@ -1,0 +1,26 @@
+python Clustering_Scripts.py -p 4
+['4']
+CREA
+Elapsed time loading data: 5.820522308349609
+
+-------------------------------
+CREA
+
+Maxmin Transform and data serialisation: 2.3872032165527344
+starting  4  -----------------
+SOM plot time elapsed 96.98400354385376
+elapsed KM 3152.078009366989
+elapsed KS 260.14835381507874
+starting  5  -----------------
+SOM plot time elapsed 85.70309591293335
+elapsed KM 3013.6466932296753
+elapsed KS 347.936496257782
+starting  6  -----------------
+SOM plot time elapsed 79.21063804626465
+elapsed KM 5281.041139364243
+elapsed KS 433.09255361557007
+starting  7  -----------------
+SOM plot time elapsed 74.54623866081238
+elapsed KM 4271.479408979416
+elapsed KS 509.2471249103546
+elapsed TOTAL 17812.962796211243

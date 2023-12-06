@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l walltime=16:00:00
+#PBS -l vmem=30gb
+#PBS -l nodes=1:ppn=1
+#PBS -N SOM_KM_KKM_KS_2
+#PBS -m bea
+#PBS -o Sub_Output/output_SOM_KM_KKM_KS_2.txt
+#PBS -e Sub_Output/error_SOM_KM_KKM_KS_2.txt
+#PBS -t 0-2
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/8_PCA_Signaling/Clustering
+
+
+a=(3*2)
+
+echo python Clustering_Scripts.py -p $((${PBS_ARRAYID}+$a))
+python Clustering_Scripts.py -p $((${PBS_ARRAYID}+$a))
+
+
+
