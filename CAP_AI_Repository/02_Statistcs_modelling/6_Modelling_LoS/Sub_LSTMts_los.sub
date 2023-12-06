@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -l walltime=96:00:00
+#PBS -l vmem=12gb
+#PBS -l nodes=1:ppn=1
+#PBS -N los_ts_LSTM
+#PBS -m bea
+#PBS -o output_los_ts_LSTM.txt
+#PBS -e error_los_ts_LSTM.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/6_Modelling_LoS/
+
+echo los_ts_LSTM
+python los_ts_LSTM.py
+
+
