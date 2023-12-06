@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l walltime=96:00:00
+#PBS -l vmem=12gb
+#PBS -l nodes=1:ppn=1
+#PBS -N SVM_Unbal_EWS_vec
+#PBS -m bea
+#PBS -o output_Unbal_SVM_EWS_scal.txt
+#PBS -e errors_Unbal_SVM_EWS_scal.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/09_SVM_EWS_Scalar/Unbalanced/
+
+echo SVM_Unbalanced_EWS_all
+python SVM_Unbalanced_EWS_all.py
+echo SVM_Unbalanced_EWS_un65
+python SVM_Unbalanced_EWS_un65.py
+echo SVM_Unbalanced_EWS_up65
+python SVM_Unbalanced_EWS_up65.py
+
+
+

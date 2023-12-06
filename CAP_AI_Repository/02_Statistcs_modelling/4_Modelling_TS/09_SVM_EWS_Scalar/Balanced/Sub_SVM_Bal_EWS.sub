@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l walltime=96:00:00
+#PBS -l vmem=12gb
+#PBS -l nodes=1:ppn=1
+#PBS -N SVM_Bal_EWS_scal
+#PBS -m bea
+#PBS -o output_SVM_Bal_EWS_scal.txt
+#PBS -e errors_SVM_Bal_EWS_scal.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/09_SVM_EWS_Scalar/Balanced/
+
+echo SVM_Balanced_EWS_all
+python SVM_Balanced_EWS_all.py
+echo SVM_Balanced_EWS_un65
+python SVM_Balanced_EWS_un65.py
+echo SVM_Balanced_EWS_up65
+python SVM_Balanced_EWS_up65.py
+
+
+
