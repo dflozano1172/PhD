@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -l walltime=96:00:00
+#PBS -l vmem=20gb
+#PBS -l nodes=1:ppn=1
+#PBS -N LSTM_NN
+#PBS -m bea
+#PBS -o output_LSTM.txt
+#PBS -e error_LSTM.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/03_LSTM_RNN
+
+
+python LSTM_Balanced.py
+python LSTM_Unbalanced.py
+
+

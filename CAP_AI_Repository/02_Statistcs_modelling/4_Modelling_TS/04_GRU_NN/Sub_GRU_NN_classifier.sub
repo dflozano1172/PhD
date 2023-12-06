@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -l walltime=120:00:00
+#PBS -l vmem=20gb
+#PBS -l nodes=1:ppn=1
+#PBS -N GRU_NN
+#PBS -m bea
+#PBS -o output_GRU.txt
+#PBS -e error_GRU.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/04_GRU_NN
+
+
+python GRU_Balanced.py
+python GRU_Unbalanced.py
+
+

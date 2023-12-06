@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -l walltime=48:00:00
+#PBS -l vmem=12gb
+#PBS -l nodes=1:ppn=1
+#PBS -N LSTM_EWS_Unbal_vec_up65
+#PBS -m bea
+#PBS -o output_LSTM_EWS_vec_up65.txt
+#PBS -e error_LSTM_EWS_vec_up65.txt
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/4_Modelling_TS/05_LSTM_EWS_vectorial/Unbalanced
+
+
+python LSTM_Unbalanced_EWS_up65.py
+
