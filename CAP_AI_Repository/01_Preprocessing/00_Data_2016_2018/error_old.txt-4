@@ -1,0 +1,16 @@
+/etc/profile.d/hpc-login.sh: line 37: export: `4': not a valid identifier
+02_01_Interpolation_eobs_2016_2018.py:115: RuntimeWarning: Mean of empty slice
+  errors  = np.nanmean(errors, axis=0)
+Traceback (most recent call last):
+  File "02_01_Interpolation_eobs_2016_2018.py", line 233, in <module>
+    interp  = interpolate_by_method(series_, methods_feat_0[idx_feat])
+IndexError: list index out of range
+/etc/profile.d/hpc-login.sh: line 37: export: `4': not a valid identifier
+/etc/profile.d/hpc-login.sh: line 37: export: `4': not a valid identifier
+02_01_Interpolation_eobs_2016_2018.py:114: RuntimeWarning: Mean of empty slice
+  errors  = np.nanmean(errors, axis=0)
+/etc/profile.d/hpc-login.sh: line 37: export: `4': not a valid identifier
+  File "03_00_Sub_Process_haematology.sub", line 11
+    source ~/anaconda3/bin/activate spyder-env
+           ^
+SyntaxError: invalid syntax
