@@ -1,0 +1,35 @@
+2023-10-11 01:34:46.307856: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2023-10-11 01:34:46.308131: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-10-11 01:34:48.016666: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-10-11 01:34:48.134408: E tensorflow/stream_executor/cuda/cuda_driver.cc:328] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-10-11 01:34:48.134429: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (alice-node017): /proc/driver/nvidia/version does not exist
+2023-10-11 01:34:48.134609: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-11 01:34:48.434613: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2023-10-11 01:34:48.435010: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2395335000 Hz
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:163: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:163: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+WARNING:tensorflow:5 out of the last 9409 calls to <function Model.make_predict_function.<locals>.predict_function at 0x15541eb7bdc0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 9411 calls to <function Model.make_predict_function.<locals>.predict_function at 0x155421976310> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:163: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:185: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+/alice-home/1/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final/Functions_forecasting.py:163: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()

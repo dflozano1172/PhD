@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --time=80:00:00
+#SBATCH --mem=30gb
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --job-name=Forecasting_test
+#SBATCH --mail-type=BEGIN,END,FAIL
+
+#SBATCH --array=0-4
+
+#SBATCH --output=Output/%x-%A_%a.out
+#SBATCH --error=Error/%x-%A_%a.err
+
+
+
+# conda activate spyder-env
+source ~/anaconda3/bin/activate spyder-env
+cd /home/d/dlr10/Documents/02_Statitics_modelling/5_Modelling_TS_Forecasting/Forecasting_Final
+
+
+a=0
+
+echo python Forecasting_script_sub.py -p $((${SLURM_ARRAY_TASK_ID}+$a))
+python Forecasting_script_sub.py -p $((${SLURM_ARRAY_TASK_ID}+$a))
+
+
+
+

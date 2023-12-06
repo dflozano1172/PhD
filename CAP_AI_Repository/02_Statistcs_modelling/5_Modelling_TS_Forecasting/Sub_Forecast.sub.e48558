@@ -1,0 +1,12 @@
+/var/spool/slurmd/job48558/slurm_script: line 20: 2131592 Killed                  python Forecasting_script_sub.py -p $((${PBS_ARRAYID}+$a))
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=48558.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.
+2023-10-05 17:00:22.749663: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2023-10-05 17:00:22.749830: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-10-05 17:00:27.887214: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-10-05 17:00:27.976287: E tensorflow/stream_executor/cuda/cuda_driver.cc:328] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-10-05 17:00:27.976580: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (alice-node016): /proc/driver/nvidia/version does not exist
+2023-10-05 17:00:27.978393: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-05 17:00:28.485535: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2023-10-05 17:00:28.491943: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2395375000 Hz
+slurmstepd: error: *** JOB 48562 ON alice-node016 CANCELLED AT 2023-10-05T22:53:31 ***
